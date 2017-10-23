@@ -10,9 +10,9 @@
         <Label x:Name="LblCounterTxt" FontSize="20px" Content="Duck counter:" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.191,0.091" Width="158"/>
         <Label x:Name="LblCounter" FontSize="20px" Content="0/0" HorizontalAlignment="Left" Margin="165,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.263,-0.344" Height="37"/>
         <Image x:Name="ImgTarget" Source="Resources/target.png" HorizontalAlignment="Left" Height="100" Margin="107,132,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.503,0.477"/>
-        <Image x:Name="ImgDuck1" HorizontalAlignment="Left" Height="100" Margin="371,123,0,0" VerticalAlignment="Top" Width="100" Source="Resources/duck.png"/>
-        <Image x:Name="ImgDuck2" HorizontalAlignment="Left" Height="100" Margin="231,37,0,0" VerticalAlignment="Top" Width="100" Source="Resources/duck.png"/>
-        <Image x:Name="ImgDuck3" HorizontalAlignment="Left" Height="100" Margin="271,189,0,0" VerticalAlignment="Top" Width="100" Source="Resources/duck.png"/>
+        <Image x:Name="ImgDuck1" HorizontalAlignment="Left" Height="100" Margin="371,123,0,0" VerticalAlignment="Top" Width="100" Source="Resources/duck.png" MouseUp="ImgDuck1_MouseUp"/>
+        <Image x:Name="ImgDuck2" HorizontalAlignment="Left" Height="100" Margin="231,37,0,0" VerticalAlignment="Top" Width="100" Source="Resources/duck.png" MouseUp="ImgDuck2_MouseUp"/>
+        <Image x:Name="ImgDuck3" HorizontalAlignment="Left" Height="100" Margin="271,189,0,0" VerticalAlignment="Top" Width="100" Source="Resources/duck.png" MouseUp="ImgDuck3_MouseUp"/>
 
     </Grid>
     <Window.Background>
