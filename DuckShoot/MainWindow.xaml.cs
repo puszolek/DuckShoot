@@ -20,6 +20,8 @@ namespace DuckShoot
     /// </summary>
     public partial class MainWindow : Window
     {
+        int tick = -4;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -34,19 +36,17 @@ namespace DuckShoot
         }
 
         private void DispatcherTimer_Tick(object sender, EventArgs e)
-        {
-            int tick = -4;
-            if(ImgDuck1.Margin.Left <= 0)
+        {            if(ImgDuck1.Margin.Left <= 0)
             {
                 ImgDuck1.RenderTransformOrigin = new Point(0.5, 0.5);
                 ScaleTransform flipTrans = new ScaleTransform();
                 flipTrans.ScaleX = -1; // or 1
                                        //flipTrns.ScaleY = -1;
                 ImgDuck1.RenderTransform = flipTrans;
-                tick = 4;
+                tick = -tick;
             }
 
-            ImgDuck1.Margin = new Thickness(ImgDuck1.Margin.Left + tick, ImgDuck1.Margin.Top, 0, 0);            //ImgDuck2.Margin = new Thickness(ImgDuck2.Margin.Left + 2, ImgDuck2.Margin.Top, 0, 0);
+            ImgDuck1.Margin = new Thickness(ImgDuck1.Margin.Left + tick, ImgDuck1.Margin.Top, 0, 0);            //ImgDuck2.Margin = new Thickness(ImgDuck2.Margin.Left + 2, ImgDuck2.Margin.Top, 0, 0);
             //ImgDuck3.Margin = new Thickness(ImgDuck3.Margin.Left + 2, ImgDuck3.Margin.Top, 0, 0);
         }
 
